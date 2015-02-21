@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+
+# Specify your gem's dependencies in ruby_inspector.gemspec
+gem 'pry'
+gem 'ruby_inspector', path: '../../ruby_inspector'
+
+gem 'faraday'
