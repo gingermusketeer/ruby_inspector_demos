@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   namespace :request do
       get 'get'
       get 'post'
+      get 'put'
   end
 
   # Example of regular route:
