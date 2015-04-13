@@ -13,11 +13,11 @@ app.put('/put', function (req, res) {
   })
 
   req.on('end', function () {
-    res.send(JSON.stringify({
+    res.json({
       url: req.url,
       headers: req.headers,
       body: body
-    }))
+    })
   })
 })
 
@@ -31,11 +31,11 @@ app.post('/post', function (req, res) {
 
   req.on('end', function () {
     console.log('end')
-    res.send(JSON.stringify({
+    res.json({
       url: req.url,
       headers: req.headers,
       body: body
-    }))
+    })
   })
 })
 
